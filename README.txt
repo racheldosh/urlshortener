@@ -9,7 +9,16 @@ Pull from docker:
 
 	docker pull racheldoshcollins/url_shortener
 
-Or from the hello folder: 
+From the hello folder: 
+
+	docker build -t image-name .
+	docker run --publish 8080:8080 --name test --rm image-name
+	
+	Then, to stop, run from a new terminal:
+
+		docker stop test
+
+Or, from the hello folder (to run without docker):
 
 	go build hello.go
 	./hello
