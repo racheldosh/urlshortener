@@ -1,6 +1,9 @@
-CogoLabs Take-Home Assessment
-Rachel Collins
+What is this project?
+----
+This was a take-home assessment for CogoLabs to build a url shortener. The language was go, which I had never worked with before. I also had never worked with docker. It was a learn-something-new project. 
 
+How to run
+----
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To run program: 
@@ -27,11 +30,12 @@ Then the app can be viewed at "localhost:8080"
 Once a shortenedURL is retrieved, using "localhost:8080/url/<shortenedURL>" 
 	will redirect to the requested URL
 
-
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Known bugs:
+Bugs and future works
+---------
+
+Bugs:
 
 1. The app doesn't validate the URL entered to be shortened. If the user enters "test" to be shortened, "test" will be added to the database as a URL. Then, when the user calls localhost:8080/url/<shortenedURL>" an error occurs when trying to redirect to the faulty url "test."
 
@@ -39,12 +43,11 @@ Known bugs:
 
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Future work: 
 
-1. Fix bugs
+1. Address the known bugs above (primarily, focus on validating urls)
 
-2. Testing
+2. Adding testing (may help with #1 :D)
 
-3. Style
+3. Style -- was is convention for Go?
